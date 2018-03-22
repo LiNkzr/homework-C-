@@ -1,1 +1,1 @@
-This is the homework folder of C project for the 2nd term of 1st grade in collage 
+#此为大一下半学期C语言程序作业
