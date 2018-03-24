@@ -2,7 +2,7 @@
 #define MAXN 20
 
 void strmcpy(char *t,int m,char *s);
-void ReadString(char s[]); /* 由裁判实现，略去不表 */
+void ReadString(char s[]); /* 鐢辫鍒ゅ疄鐜帮紝鐣ュ幓涓嶈〃 */
 
 int main()
 {
@@ -15,7 +15,7 @@ int main()
 	return 0;
 }
 
-/* 你的代码将被嵌在这里 */
+/* 浣犵殑浠ｇ爜灏嗚宓屽湪杩欓噷 */
 void sort(int *x,int n)
  {
 	int a=0,b=0,temp=0,maxium=0;
