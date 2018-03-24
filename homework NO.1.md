@@ -201,8 +201,47 @@ void output(int *arr,int n)
 #### 3.错误原因：
 
 ​			 此代码未完成
+### 6.指针选择法排序
 
-## 3[.代码托管:](https://github.com/TartaricAcid943/homework-C-.git)
+#### 1.思路步骤:
+
+			  1.从数组第一个元素开始遍历数组，找出最大值，与第一个元素交换
+
+			  2.从数组第二个元素开始遍历数组，找出最大值，与第二个元素交换，直到从数组倒数第二个元素开始遍历数组，找出最大值，与倒数第二个元素交换
+
+			   3.输出数组
+
+#### 2.实验代码:
+```c
+   void sort(int *x,int n)
+     {
+    	int a=0,b=0,temp=0,maxium=0;
+    	for(a=0;a<n-1;a++)
+    	{
+    		maxium=a;
+    		for(b=a;b<n;b++)
+    			{
+    				if(*(x+maxium)<*(x+b))
+    					{
+    						maxium=b;
+    					}
+    			}
+    		if(maxium!=a)
+    		 	{
+    				temp=*(x+maxium);
+    				*(x+maxium)=*(x+a);
+    				*(x+a)=temp;
+    		 	}
+        }
+     }
+```
+
+#### 3.错误原因:
+
+ 无
+
+
+## 3.[代码托管](https://github.com/TartaricAcid943/homework-C-.git)
 
 ## 4.作业点评：
 
